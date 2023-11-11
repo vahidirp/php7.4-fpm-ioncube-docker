@@ -19,6 +19,7 @@ RUN apt-get update && \
         libcurl4-openssl-dev \
         libonig-dev \  
         libxslt1-dev \ 
+        libmagickwand-dev \
     && docker-php-ext-install -j$(nproc) \
         mysqli \
         pdo_mysql \
