@@ -5,17 +5,18 @@ FROM php:7.4-fpm
 # Install required dependencies
 RUN apt-get update && \
     apt-get install -y \
-    libzip-dev \
-    zip \
-    unzip \
-    libpq-dev \
-    libfreetype6-dev \
-    libjpeg62-turbo-dev \
-    libpng-dev \
-    libicu-dev \
-    libldap2-dev \
-    libxml2-dev \
-    libmemcached-dev \
+        libzip-dev \
+        zip \
+        unzip \
+        libpq-dev \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+        libicu-dev \
+        libldap2-dev \
+        libxml2-dev \
+        libmemcached-dev \
+        libcurl4-openssl-dev \
     && docker-php-ext-install -j$(nproc) \
         mysqli \
         pdo_mysql \
