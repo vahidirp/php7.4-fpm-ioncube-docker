@@ -17,6 +17,7 @@ RUN apt-get update && \
         libxml2-dev \
         libmemcached-dev \
         libcurl4-openssl-dev \
+        libonig-dev \  
     && docker-php-ext-install -j$(nproc) \
         mysqli \
         pdo_mysql \
