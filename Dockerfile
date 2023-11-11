@@ -27,11 +27,9 @@ RUN apt-get update && \
         php7.4-intl \
         php7.4-bcmath \
         php7.4-ldap \
-        php7.4-tidy \
         php7.4-xmlrpc \
         php7.4-xsl \
         php7.4-soap \
-        php7.4-redis \
         php7.4-memcached \
         php7.4-opcache \
         && \
